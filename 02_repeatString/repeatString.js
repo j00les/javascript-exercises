@@ -1,8 +1,29 @@
-const repeatString = function(string,num) {
-    let repeatedString = string
-    for (i = 0)
-
+const repeatString = (string,num) => {
+    if (string < 0) {
+        return 'Error!'
+    };
+    let word = '';
+    for (let i = 0; i < num; i++) {
+        word += string;
+    }
+    return  word;
 };
 
-// Do not edit below this line
-module.exports = repeatString;
+
+
+// const repeatString = function(word, times) {
+    //     if (times < 0) return 'ERROR';
+    //     let string = '';
+    //     for (let i = 0; i < times; i++) {
+        //       string += word;
+        //     }
+        //     return string;
+        //   };
+        
+        
+  module.exports = repeatString;
+
+
+
+
+
