@@ -1,5 +1,5 @@
 const repeatString = (string, number) => {
-    if (number <= 0) return 'Number must be greater than 0'
+    if (number < 0) return 'ERROR'
     let word = '';
     for (let i = 0; i < number; i++) {
             word = word + string; //code block to be executed
@@ -9,7 +9,7 @@ const repeatString = (string, number) => {
 
 
 
-console.log(repeatString('test ', 7));
+console.log(repeatString('', 10));
 module.exports = repeatString;
 
 
