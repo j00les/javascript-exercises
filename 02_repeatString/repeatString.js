@@ -2,14 +2,14 @@ const repeatString = (string, number) => {
     if (number < 0) return 'ERROR'
     let word = '';
     for (let i = 0; i < number; i++) {
-            word = word + string; //code block to be executed
+            word += string; //code block to be executed
     }
     return word
 }
 
 
 
-console.log(repeatString('', 10));
+console.log(repeatString('sssss ', 10));
 module.exports = repeatString;
 
 
